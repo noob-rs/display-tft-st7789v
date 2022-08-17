@@ -352,7 +352,7 @@ void LCD_X_Config(void)
     PortAPI.pfRead8_A1   = mtb_st7789v_read_data;
     PortAPI.pfReadM8_A1  = mtb_st7789v_read_data_stream;
 
-    GUIDRV_FlexColor_SetFunc(pDevice, &PortAPI, GUIDRV_FLEXCOLOR_F66709, GUIDRV_FLEXCOLOR_M16C0B8);
+    GUIDRV_FlexColor_SetFunc(pDevice, &PortAPI, GUIDRV_FLEXCOLOR_F66709, GUIDRV_FLEXCOLOR_M16C1B8);
 }
 
 /*********************************************************************

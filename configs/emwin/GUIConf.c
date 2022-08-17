@@ -64,14 +64,7 @@ extern "C"
 //
 // Define the available number of bytes available for the GUI
 //
-#if !defined(GUI_NUMBYTES)
-    #if ((MTB_DISPLAY_SIZE_X * MTB_DISPLAY_SIZE_Y * MTB_DISPLAY_COLOR_BITS / 4) > 0x7800)
-        #define GUI_NUMBYTES  (1024*32)
-    #else
-        #define GUI_NUMBYTES  ((MTB_DISPLAY_SIZE_X * MTB_DISPLAY_SIZE_Y * \
-                                MTB_DISPLAY_COLOR_BITS / 4) + 2048)
-    #endif
-#endif
+#define GUI_NUMBYTES  2 * ((MTB_DISPLAY_SIZE_X * MTB_DISPLAY_SIZE_Y * MTB_DISPLAY_COLOR_BITS / 4) + 2048)
 
 /*********************************************************************
 *
